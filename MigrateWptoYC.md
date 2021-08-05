@@ -13,17 +13,17 @@
 1. [Создайте SSL-сертификат для сайта c помощью Let’s Encrypt в Yandex.Cloud](#Создайте-ssl-сертификат-для-сайта-c-помощью-lets-encrypt-в-yandexcloud).    
 1. [Проверьте работу сайта](#Проверьте-работу-сайта). 
 
-Если сайт вам больше не нужен,[ удалите все используемые им ресурсы](#Как-удалить-созданные-ресурсы).
+Если сайт вам больше не нужен, [удалите все используемые им ресурсы](#Как-удалить-созданные-ресурсы).
 
 
 ## <a id="подготовьте-yandex-cloud-к-работе"></a>**Подготовьте Yandex.Cloud к работе**
 
 Перед началом работы, необходимо зарегистрироваться в Yandex.Cloud и создать платежный аккаунт:
 
-1. Перейдите в[ консоль управления](https://console.cloud.yandex.ru/), затем войдите в Yandex.Cloud или зарегистрируйтесь, если вы еще не зарегистрированы.
-2. [На странице биллинга](https://console.cloud.yandex.ru/billing) убедитесь, что у вас подключен[ платежный аккаунт](https://cloud.yandex.ru/docs/billing/concepts/billing-account), и он находится в статусе `ACTIVE` или `TRIAL_ACTIVE`. Если платежного аккаунта нет,[ создайте его](https://cloud.yandex.ru/docs/billing/quickstart/).
+1. Перейдите в [консоль управления](https://console.cloud.yandex.ru/), затем войдите в Yandex.Cloud или зарегистрируйтесь, если вы еще не зарегистрированы.
+2. [На странице биллинга](https://console.cloud.yandex.ru/billing) убедитесь, что у вас подключен [платежный аккаунт](https://cloud.yandex.ru/docs/billing/concepts/billing-account), и он находится в статусе `ACTIVE` или `TRIAL_ACTIVE`. Если платежного аккаунта нет, [создайте его](https://cloud.yandex.ru/docs/billing/quickstart/).
 
-Если у вас есть активный платежный аккаунт, вы можете создать или выбрать каталог, в котором будет работать ваша виртуальная машина (ВМ), на[ странице облака](https://console.cloud.yandex.ru/cloud).
+Если у вас есть активный платежный аккаунт, вы можете создать или выбрать каталог, в котором будет работать ваша виртуальная машина (ВМ), на [странице облака](https://console.cloud.yandex.ru/cloud).
 
 [Подробнее об облаках и каталогах](https://cloud.yandex.ru/docs/resource-manager/concepts/resources-hierarchy).
 
@@ -31,14 +31,14 @@
 
 В стоимость поддержки ВМ будет входить:
 
-* Плата за постоянно запущенную ВМ (см.[ тарифы Yandex Compute Cloud](https://cloud.yandex.ru/docs/compute/pricing)).
-* Плата за использование динамического или статического внешнего IP-адреса (см.[ тарифы Yandex Virtual Private Cloud](https://cloud.yandex.ru/docs/vpc/pricing)).
+* Плата за постоянно запущенную ВМ (см. [тарифы Yandex Compute Cloud](https://cloud.yandex.ru/docs/compute/pricing)).
+* Плата за использование динамического или статического внешнего IP-адреса (см. [тарифы Yandex Virtual Private Cloud](https://cloud.yandex.ru/docs/vpc/pricing)).
 
 ### Создайте виртуальную машину для WordPress
 
 Чтобы создать виртуальную машину (ВМ):
 
-1. На странице каталога в[ консоли управления](https://console.cloud.yandex.ru/) нажмите кнопку **Создать ресурс** и выберите **Виртуальная машина**.
+1. На странице каталога в [консоли управления](https://console.cloud.yandex.ru/) нажмите кнопку **Создать ресурс** и выберите **Виртуальная машина**.
 
 ![alt text](https://github.com/shalena29/Y.Cloud/blob/main/ru/_assets/createvm.png "Нажмите кнопку Создать ресурс и выберите Виртуальная машина")
 
@@ -47,7 +47,7 @@
     * Может содержать строчные буквы латинского алфавита, цифры и дефисы.
     * Первый символ — буква. Последний символ — не дефис.
 
-3. Выберите[ зону доступности](https://cloud.yandex.ru/docs/overview/concepts/geo-scope), в которой будет находиться ВМ.
+3. Выберите [зону доступности](https://cloud.yandex.ru/docs/overview/concepts/geo-scope), в которой будет находиться ВМ.
 
 4. В блоке **Образы из Cloud Marketplace** нажмите кнопку **Выбрать**. Выберите публичный образ **LAMP**, который включает в себя операционную систему семейства Linux, веб-сервер Apache, СУБД MySQL и интерпретатор PHP (Linux, Apache, MySQL, PHP — сокращённо LAMP).
 
@@ -82,7 +82,7 @@
 
     * В поле **SSH-ключ** вставьте содержимое файла открытого ключа.
 
-Пару ключей для подключения по SSH необходимо создать самостоятельно, см. раздел[ Подключиться к виртуальной машине Linux по SSH](https://cloud.yandex.ru/docs/compute/operations/vm-connect/ssh).
+Пару ключей для подключения по SSH необходимо создать самостоятельно, см. раздел [Подключиться к виртуальной машине Linux по SSH](https://cloud.yandex.ru/docs/compute/operations/vm-connect/ssh).
 
 **Внимание**
 
@@ -155,7 +155,7 @@ $ sudo phpenmod mbstring</code></pre>
 
 По умолчанию используйте пользователя `root` с паролем, который ранее записали и сохранили в текстовый файл `default_passwords.txt`.
 
-![alt text](https://github.com/shalena29/Y.Cloud/blob/main/ru/_assets/phpmyadmin-root.png "Используйте пользователя root с паролемиз текстового файла default_passwords")
+![alt text](https://github.com/shalena29/Y.Cloud/blob/main/ru/_assets/phpmyadmin-root.png "Используйте пользователя root с паролем из текстового файла default_passwords")
 
 ### **Сделайте phpMyAdmin более безопасным**
 Для защиты от несанкционированных действий необходимо ограничить доступ и создать дополнительный пароль для входа в phpMyAdmin:
@@ -211,7 +211,7 @@ $ sudo systemctl restart apache2
 
 * С помощью различных плагинов для WordPress (BackWPup или Updraft Plus и др.).
 * С помощью встроенных средств в панели управления хостингом.
-* Скопировать все файлы через FTP/SFTP ([FileZilla](https://filezilla.ru/),[ FAR](https://www.farmanager.com/download.php?l=ru),[ Total Commander](https://www.ghisler.com/) и др.), а БД экспортировать через панель phpMyAdmin.
+* Скопировать все файлы через FTP/SFTP ([FileZilla](https://filezilla.ru/), [FAR](https://www.farmanager.com/download.php?l=ru), [Total Commander](https://www.ghisler.com/) и др.), а БД экспортировать через панель phpMyAdmin.
 
 ## <a id="перенесите-файлы-сайта-в-yandexcloud"></a>**Перенесите файлы сайта в Yandex.Cloud**
 
@@ -225,7 +225,7 @@ $ sudo chmod 777 /var/www/html
 
 Для загрузки файлов на Yandex.Cloud можно использовать следующие протоколы:
 
-* FTP/SFTP ([FileZilla](https://filezilla.ru/),[ FAR](https://www.farmanager.com/download.php?l=ru),[ Total Commander](https://www.ghisler.com/)).
+* FTP/SFTP ([FileZilla](https://filezilla.ru/), [FAR](https://www.farmanager.com/download.php?l=ru), [Total Commander](https://www.ghisler.com/)).
 * SSH ([Putty](https://www.putty.org/)).
 3. Разархивируйте папку с файлами через SSH: 
 ```
@@ -321,7 +321,7 @@ SSL-сертификат позволяет шифровать трафик ме
 
 ## <a id="Как-удалить-созданные-ресурсы"></a>**Как удалить созданные ресурсы**
 
-Чтобы перестать пользоваться услугами, достаточно удалить[ виртуальную машину](https://cloud.yandex.ru/docs/compute/operations/vm-control/vm-delete).
+Чтобы перестать пользоваться услугами, достаточно удалить [виртуальную машину](https://cloud.yandex.ru/docs/compute/operations/vm-control/vm-delete).
 
 Если вы зарезервировали статический публичный IP-адрес специально для этой ВМ:
 
